@@ -9,15 +9,22 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Beep Boop</h1>
+        <h2>Enter a number to see what the robot says back!</h2>
+      </div>
       <form id="formOne">
         <div class="form-group">
-          <label for="number">Please enter a number</label>
-          <input id="number" type="text" class="form-control">
+          <input id="number" type="text" class="form-control" placeholder="Please enter a number">
+        </div>
+        <div class="form-group">
+          <input id="name" type="text" class="form-control" placeholder="Please enter your name">
         </div>
         <button type="submit" class="btn btn-info">Beep Boop!</button>
       </form>
       <div class="output">
         <p id="output"></p>
+        <img src="img/robot.jpg" alt="A picture of a robot" height=300px width=300px>
       </div>
     </div>
   </body>

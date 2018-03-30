@@ -1,0 +1,14 @@
+.output{
+  display: none;
+  background-color: #42f4df;
+  color: #ef0707;
+  font-size: 20px;
+}
+body{
+  background-image: url(../img/background.jpg);
+}
+.jumbotron{
+  text-align: center;
+  background-color: #42f4df;
+  color: #ef0707;
+}
