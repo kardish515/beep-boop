@@ -1,6 +1,6 @@
 function beepBoop(number, name){
   if(name === ""){
-    name = "friend"
+    name = "friend";
   }
   var counter = parseInt(number);
   var array = [];
@@ -21,7 +21,7 @@ function beepBoop(number, name){
 
 function boopBeep(number, name){
   if(name === ""){
-    name = "friend"
+    name = "friend";
   }
   var array = beepBoop(number, name);
   var newArray = [];
