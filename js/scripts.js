@@ -2,7 +2,12 @@ function beepBoop(number){
   var counter = parseInt(number);
   var array = [];
   for (var i = 0; i <= counter; i++) {
-    array.push(i);
+    var n = i.toString();
+    if(n === "0"){
+      array.push("Beep!");
+    } else {
+        array.push(n);
+      }
   }
   // if(number === "0"){
   //   return "Beep!";
