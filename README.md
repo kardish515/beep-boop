@@ -1,3 +1,15 @@
+# _Beep Boop_
+
+#### _Week 2 project, 3/30/18_
+
+#### By _**Nicholas Kardish**_
+
+## Description
+
+_This page takes a number and returns a range of numbers from 0 to the given number, with zeroes, ones, and threes replaced._
+
+## Specifications
+
 1-program replaces 0 with "Beep!"
   example input: 0
   exmaple output: ["Beep!"]
@@ -22,3 +34,17 @@
 8-program replaces all numbers containing 0, 1, or divisible by 3
   example input: 10
   example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!"]
+
+## Setup/Installation Requirements
+
+* _Clone this repository._
+
+## Link
+
+[a link to Beep Boop](https://kardish515.github.io/beep-boop)
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2018 **_Nicholas Kardish_**
