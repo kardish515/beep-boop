@@ -16,13 +16,47 @@ function beepBoop(number, name){
   return array.join(" ");
 }
 
+function showRobot(number){
+  var n = parseInt(number);
+  if(n%3 === 0 && n !== 0){
+    return 3;
+  } else if(number.includes("1")){
+    return 4;
+  } else if(number.includes("0")){
+    return 5;
+  } else {
+    return 6;
+  }
+}
+
 $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
     var number = $("input#number").val();
     var name = $("input#name").val();
     var result = beepBoop(number, name);
+    var robot = showRobot(number);
     $("#output").text(result);
-    $(".output").show();
+    if(robot === 3){
+      $("#robot3").show();
+      $("#robot4").hide();
+      $("#robot5").hide();
+      $("#robot6").hide();
+    } else if(robot === 4){
+      $("#robot4").show();
+      $("#robot3").hide();
+      $("#robot5").hide();
+      $("#robot6").hide();
+    } else if(robot === 5){
+      $("#robot5").show();
+      $("#robot3").hide();
+      $("#robot4").hide();
+      $("#robot6").hide();
+    } else{
+      $("#robot6").show();
+      $("#robot3").hide();
+      $("#robot4").hide();
+      $("#robot5").hide();
+    }
   });
 });
