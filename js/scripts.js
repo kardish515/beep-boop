@@ -3,27 +3,18 @@ function beepBoop(number){
   var array = [];
   for (var i = 0; i <= counter; i++) {
     var n = i.toString();
-    if(n === "3"){
+    if(i%3 === 0 && i !== 0){
       array.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else if(n === "1"){
+    } else if(n.includes("1")){
       array.push("Boop!");
-    } else if(n === "0"){
+    } else if(n.includes("0")){
       array.push("Beep!");
     } else {
         array.push(n);
     }
   }
-  // if(number === "0"){
-  //   return "Beep!";
-  // } else if(number === "1"){
-  //   return "Boop!";
-  // } else if(number === "3"){
-  //   return "I'm sorry, Dave. I'm afraid I can't do that.";
-  // }
-  return array;
+  return array.join(" ");
 }
-
-
 
 $(document).ready(function(){
   $("#formOne").submit(function(event){
