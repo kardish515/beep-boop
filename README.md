@@ -12,7 +12,7 @@ _This page takes a number and returns a range of numbers from 0 to the given num
 
 * 1-program replaces 0 with "Beep!"
     example input: 0
-    exmaple output: ["Beep!"]
+    example output: ["Beep!"]
 * 2-program replaces 1 with "Boop!"
     example input: 1
     example output: ["Boop!"]
