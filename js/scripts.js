@@ -1,4 +1,7 @@
 function beepBoop(number, name){
+  if(name === ""){
+    name = "friend"
+  }
   var counter = parseInt(number);
   var array = [];
   for (var i = 0; i <= counter; i++) {
@@ -17,6 +20,9 @@ function beepBoop(number, name){
 }
 
 function boopBeep(number, name){
+  if(name === ""){
+    name = "friend"
+  }
   var array = beepBoop(number, name);
   var newArray = [];
   array.forEach(function(element){
